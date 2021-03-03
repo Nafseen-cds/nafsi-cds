@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+    f();
+    printf("bye");
+    return 0;
+}
+void f(){
+    f2();
+    printf("two");
+    f3();
+}
+void f2(){
+    f3();
+    exit(3);
+    printf("three");
+}
+void f3(){
+    printf("one");
+}
